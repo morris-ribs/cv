@@ -1,0 +1,78 @@
+{
+  "name": "John Doe",
+  "email": "johndoe@gmail.com",
+  "nick": "jdoe",
+  "phone": "0000000000",
+  "address": {
+    "adr1": "16 my street",
+    "adr2": "06600 Antibes France"
+  },
+  "fullcvs": [    
+    {
+      "lang": "en",
+      "sections": {
+        "jobtitle": "",
+        "nationalitiestitle": "",
+        "nationalities": "No one",
+        "intexp": "International Experiences",
+        "profexp": "Professional Background",
+        "technos": "",
+        "database": "Database",
+        "controlversion": "Control Version",
+        "education": "Education",
+        "languages": "Languages",
+        "hobbies": "Hobbies"
+      },
+      "experiences": [
+        {
+          "companyname": "Hello World Ltd",
+          "companydescription": "Hello World !",
+          "location": "Here",
+          "period": "Since Aug. 2013",
+          "projects": [
+            {
+              "name": "One project",
+              "description": "only one"
+            }
+          ],
+          "technologies": {
+            "backend": [
+              {
+                "name": "Java"
+              }
+            ],
+            "frontend": [
+              {
+                "name": "JS"
+              }
+            ],
+            "database": [
+              {
+                "name": "SQL Server 2014 (T-SQL)"
+              }
+            ],
+            "controlversion": [
+              {
+                "name": "TFS"
+              }
+            ]
+          }        
+        }
+      ],
+      "education": [
+        {
+          "schoolname": "Jungle",
+          "location": "France",
+          "period": "Sep. 2001/Jul. 2012",
+          "degree": "Master's degree 2nd year",
+          "description": "Survival"
+        }
+      ],
+      "languages": [       
+        {
+          "name": "English"
+        }
+      ]
+    }
+  ]
+}
