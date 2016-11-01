@@ -1,4 +1,4 @@
-# cv
+# My CV app server side REST in Go
 A RESTful API in Go to create, delete and search for data in MongoDB
 
 # Pre-requisites
