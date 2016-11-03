@@ -6,7 +6,7 @@ A RESTful API in Go to create, delete and search for data in MongoDB
 - Install Go: https://golang.org/dl/
 - Be sure you have an app to make API calls (Swagger, Postman, Fiddler, ...)
 
-# 1) launch mongo daemon!
+# 1) Launch mongo daemon!
 After installing your MongoDB instance, open a cmd window and run the following command:
 ```
 # launch mmongo daemon
@@ -15,7 +15,7 @@ $ mongod
 
 Your MongoDB instance is up and ready to treat your requests!
 
-# 2) insert dummy data
+# 2) Insert dummy data
 Open your API client and send a POST to http://localhost:8080/candidate and insert the content of candidate_example.json in the body of the request.
 
 # 3) Clone the code
