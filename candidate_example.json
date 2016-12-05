@@ -38,22 +38,26 @@
           "technologies": {
             "backend": [
               {
-                "name": "Java"
+                "name": ".Net",
+                "level": "90"
               }
             ],
             "frontend": [
               {
-                "name": "JS"
+                "name": "JS",
+                "level": "10"
               }
             ],
             "database": [
               {
-                "name": "SQL Server 2014 (T-SQL)"
+                "name": "SQL Server 2014 (T-SQL)",
+                "level": "80"
               }
             ],
             "controlversion": [
               {
-                "name": "TFS"
+                "name": "TFS",
+                "level": "70"
               }
             ]
           }        
