@@ -53,3 +53,4 @@ Optionally, you can copy the id field of the retrieved candidate and call http:/
 # (Optional) Last but not least: delete the retrieved user
 To do it, just send a DELETE request to http://localhost:8080/candidate/{id} in order to delete the inserted user.
 
+# cv-server-rest-go
