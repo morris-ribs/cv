@@ -7,8 +7,8 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/user/cv/models"
-	"github.com/user/cv/repository"
+	"cv-server-rest-go/models"
+	"cv-server-rest-go/repository"
 )
 
 
@@ -23,15 +23,15 @@ func Index(w http.ResponseWriter, r *http.Request) {
     return
 }
 
-// GET /candidate/{id}
+// GET /candidate/{key}
 func GetCandidate(w http.ResponseWriter, r *http.Request) {
     w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 
     vars := mux.Vars(r)
-    id := vars["id"] // param id
+    key := vars["key"] // param id
 
-   candidate := repository.GetCandidate(id) // get the candidate by id
+   candidate := repository.GetCandidateByKey(key) // get the candidate by key
     if candidate.Email != "" {
     		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
     		w.WriteHeader(http.StatusOK)

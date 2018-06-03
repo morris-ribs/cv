@@ -2,7 +2,7 @@ package routes
 
 import (
     "net/http"
-    "github.com/user/cv/handlers"
+    "cv-server-rest-go/handlers"
 )
 
 type Route struct {
@@ -24,7 +24,7 @@ var routes = Routes{
     Route{
         "Candidate",
         "GET",
-        "/candidate/{id}",
+        "/candidate/{key}",
         handlers.GetCandidate,
     },
     Route{
