@@ -48,7 +48,7 @@ func GetCandidateById(id string) models.Candidate {
   return result
 }
 
-// Get a candidate by id
+// Get a candidate by key
 func GetCandidateByKey(key string) models.Candidate {
 	session, err := mgo.Dial(SERVER)
   defer session.Close()
