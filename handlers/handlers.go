@@ -31,8 +31,8 @@ func GetCandidate(w http.ResponseWriter, r *http.Request) {
     vars := mux.Vars(r)
     key := vars["key"] // param id
 
-   candidate := repository.GetCandidateByKey(key) // get the candidate by key
-    if candidate.Email != "" {
+  // candidate := repository.GetCandidateByKey(key) // get the candidate by key
+   /* if candidate.Email != "" {
     		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
     		w.WriteHeader(http.StatusOK)
     		if err := json.NewEncoder(w).Encode(candidate); err != nil {
@@ -43,7 +43,16 @@ func GetCandidate(w http.ResponseWriter, r *http.Request) {
 
   	// If we didn't find it, 404
   	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
-  	w.WriteHeader(http.StatusNotFound)
+      w.WriteHeader(http.StatusNotFound)*/
+    var candidate models.Candidate
+    candidate.Key = key
+    w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+    w.WriteHeader(http.StatusOK)
+    
+    if err := json.NewEncoder(w).Encode(candidate); err != nil {
+        panic(err)
+    }
+    return
 }
 
 // POST /candidate
