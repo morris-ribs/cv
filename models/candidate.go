@@ -65,6 +65,8 @@ type Candidate struct {
   Email     string          `json:"email"`
   Nick      string          `json:"nick"`
   Phone     string          `json:"phone"`
+  LinkedIn  string          `json:"linkedin"`
+  Github    string          `json:"github"`
   Blog      string          `json:"blog"`
   Address   Address         `json:"address"`
   FullCvs   FullCvs         `json:"fullcvs"`
